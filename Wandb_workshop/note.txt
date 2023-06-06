@@ -1,0 +1,34 @@
+https://ordinarycoders.com/blog/article/python-virtual-environment
+https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
+https://mothergeo-py.readthedocs.io/en/latest/development/how-to/venv-win.html
+
+pip install virtualenv
+python -m venv venv
+.\venv\scripts\activate
+
+
+
+cmd to this folder
+
+to activate the environment
+My_ENV\Scripts\activate
+
+launch jupyter notebook
+jupyter notebook
+
+
+
+Step 1: Create a virtual environment
+python -m venv venv
+
+Step 2: Activate the virtual environment
+venv\Scripts\activate
+
+Step 3: Install jupyter kernel for the virtual environment using the following command:
+ipython kernel install --user --name=venv
+
+Step 4: Select the installed kernel when you want to use jupyter notebook in this virtual environment
+
+
+When no longer need the kernel you can uninstall it by running the following code:
+jupyter-kernelspec uninstall venv
