@@ -51,11 +51,29 @@ def run_train(
 
     mse = mean_squared_error(y_val, y_pred, squared=False)
     # TODO: Log `mse` to Weights & Biases under the key `"MSE"`
-
+    # Log your metrics to Weights & Biases using `wandb.log`.
+    wandb.log({
+        "mean_squared_error": mse
+    })
+    
+    
+    # Save your model
     with open("regressor.pkl", "wb") as f:
         pickle.dump(rf, f)
 
+
     # TODO: Log `regressor.pkl` as an artifact of type `model`
+    ''' Logging Model to Weights & Biases
+            Weights & Biases Artifacts to track datasets, models, dependencies, and
+            results through each step of your machine learning pipeline.
+            Artifacts make it easy to get a complete and auditable history of changes to your files.
+    '''
+    
+    
+    # Log your model as a versioned file to Weights & Biases Artifact
+    artifact = wandb.Artifact(f"nyc-taxi-random-forest-regression-model", type="model")
+    artifact.add_file("regressor.pkl")
+    wandb.log_artifact(artifact)
 
 
 if __name__ == "__main__":

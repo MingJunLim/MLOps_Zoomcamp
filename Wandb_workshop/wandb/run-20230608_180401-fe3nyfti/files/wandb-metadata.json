@@ -1,0 +1,48 @@
+{
+    "os": "Linux-5.15.107+-x86_64-with-glibc2.31",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-06-08T18:04:02.237639",
+    "startedAt": "2023-06-08T18:04:01.862935",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "nyc-taxi-wandb",
+        "--wandb_entity",
+        "mingjun2901",
+        "--data_artifact",
+        "mingjun2901/nyc-taxi-wandb/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/content/drive/MyDrive/Colab Notebooks/Workshop_wandb/sweep.py",
+    "codePath": "sweep.py",
+    "host": "834c29d3c3f5",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2249.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2249.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2249.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 107.71508407592773,
+        "used": 23.337657928466797
+    },
+    "memory": {
+        "total": 12.678390502929688
+    }
+}

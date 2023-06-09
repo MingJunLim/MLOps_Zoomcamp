@@ -1,0 +1,50 @@
+{
+    "os": "Linux-5.15.107+-x86_64-with-glibc2.31",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-06-08T17:25:33.969763",
+    "startedAt": "2023-06-08T17:25:33.621343",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "nyc-taxi-wandb",
+        "--wandb_entity",
+        "mingjun2901",
+        "--raw_data_path",
+        "./data",
+        "--dest_path",
+        "./output"
+    ],
+    "state": "running",
+    "program": "/content/drive/MyDrive/Colab Notebooks/Workshop_wandb/preprocess_data.py",
+    "codePath": "preprocess_data.py",
+    "host": "834c29d3c3f5",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2249.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2249.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2249.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 107.71508407592773,
+        "used": 23.305782318115234
+    },
+    "memory": {
+        "total": 12.678390502929688
+    }
+}
