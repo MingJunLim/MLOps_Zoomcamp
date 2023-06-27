@@ -1,0 +1,6 @@
+jupyter nbconvert --to script --output converted_script starter.ipynb
+
+
+docker build -t yellow-taxi-ride-duration-prediction:v1 .
+
+docker run -it --rm -p 9696:9696  yellow-taxi-ride-duration-prediction:v1
